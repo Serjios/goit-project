@@ -1,7 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 .list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.title {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -11,42 +23,58 @@
 
 .direction {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .direction-title {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 38px;
 }
 
-.direction-title::before {
-  content: "";
-  display: inline-block;
+.direction-icon {
   width: 30px;
   height: 30px;
-  /* background-image: url("../images/target.svg"); */
+  fill: #e9ac38;
 }
 
-.direction-list {
-  /* list-style: none; */
+.direction-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 15px;
 }
 
 .direction-item {
   width: 280px;
-  height: 225px;
   background-color: #fafafa;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 45px;
+  padding-right: 30px;
+  border-radius: 7px;
+  margin-bottom: 15px;
 }
 
 .direction-subtitle {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 25px;
   color: #222222;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
 }
 
 .direction-article {
   font-size: 16px;
   color: #444444;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 .direction-item:hover .direction-article {
@@ -57,6 +85,19 @@
   font-size: 30px;
   font-weight: 700;
   color: #e9ac38;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-right: -1px;
+}
+
+.direction-age-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration: underline;
+  vertical-align: 25px;
 }
 
 .direction-item:hover .direction-age {
@@ -68,8 +109,10 @@
 }
 
 .direction-link {
-  font-size: 16px;
+  font-size: 20px;
   color: #e9ac38;
+  padding: 10px;
+  text-decoration: none;
 }
 
 .direction-item:hover .direction-link {
